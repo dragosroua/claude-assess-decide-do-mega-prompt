@@ -417,7 +417,7 @@ For deep philosophical exploration, see [`docs/ADD_PHILOSOPHY.md`](docs/ADD_PHIL
 - [ADD MCP Server](https://github.com/dragosroua/addtaskmanager-mcp-server) - Claude Desktop integration
 
 **Community**:
-- Blog post: [Supercharging Claude with the Assess-Decide-Do Framework](https://wp.dragosroua.com/supercharging-claude-with-the-assess-decide-do-framework-mega-prompt-inside/)
+- Blog post: [Supercharging Claude with the Assess-Decide-Do Framework](https://dragosroua.com/supercharging-claude-with-the-assess-decide-do-framework-mega-prompt-inside/)
 - Discussions: Open GitHub issues for questions and insights
 
 ## License
