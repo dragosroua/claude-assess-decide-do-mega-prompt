@@ -64,7 +64,7 @@ touch .claude/statusline.sh
 chmod +x .claude/statusline.sh
 ```
 
-2. Copy the script content from [templates/claude-code/statusline.sh](../../templates/claude-code/statusline.sh) into `.claude/statusline.sh`
+2. Copy the script content from [templates/claude-code/statusline.sh](../templates/claude-code/statusline.sh) into `.claude/statusline.sh`
 
 ---
 
@@ -433,10 +433,10 @@ echo "$realm" > "$PREV_REALM_FILE"
 - [Modular Architecture](../ADD_MODULAR_ARCHITECTURE.md) - Configuration levels
 
 **Get help:**
-- [Main Troubleshooting Guide](../../integration/troubleshooting.md)
+- [Main Troubleshooting Guide](../integration/troubleshooting.md)
 
 ---
 
 **Ready to experience ambient flow awareness?**
 
-[← Back to README](../README.md) | [View Template Script](../../templates/claude-code/statusline.sh)
+[← Back to README](../README.md) | [View Template Script](../templates/claude-code/statusline.sh)
