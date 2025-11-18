@@ -57,7 +57,9 @@ When Claude understands your realm, it provides cognitive support instead of gen
 ✅ **Smoother interactions** - Natural conversation flow
 
 > *"Nice! I have a similar problem and have been looking for a solution."* - r/ClaudeAI comment
+
 > *"This definitely is a problem I was having. Sometimes Claude gets too eager and just wasted a ton of token while other times it just doesn't understand what to do which ends up me doing multiple rounds of reject comment loops. This framework sounds very interesting."* - r/ClaudeAI comment user  
+
 > *"This is brilliant! I've been strugling with Claude jumping to solutions when I'm still exploring ideas, this framework makes so much sense."* - r/ClaudeAI comment
 
 ---
