@@ -1,129 +1,72 @@
-![Supercharging Claude with the Assess-Decide-Do Framework](assets/hero-claude-mega-prompt.png)
+# When AI Understands Where You Are in Your Thinking
 
-# Supercharging Claude with the Assess-Decide-Do Framework
+[![ADD Framework Integration](assets/hero-claude-mega-prompt.png)](https://dragosroua.com/supercharging-claude-with-the-assess-decide-do-framework-mega-prompt-inside/)
 
-A comprehensive integration that teaches Claude to operate with deep awareness of the Assess-Decide-Do (ADD) life management framework, creating smoother workflows, clearer thinking, and surprisingly empathic AI interactions.
+[![GitHub stars](https://img.shields.io/github/stars/dragosroua/claude-assess-decide-do-mega-prompt?style=social)](https://github.com/dragosroua/claude-assess-decide-do-mega-prompt)
 
-## What is the Assess-Decide-Do Framework?
+**What if AI didn't just answer questions, but understood whether you're exploring, deciding, or executing?**
 
-**ADD is a life management framework** created by Dragos Roua in 2010 that recognizes humans operate in three distinct, sequential realms:
+This is the first integration of a human cognitive framework into a Large Language Model. Not training AI to be smarter—training AI to recognize human mental states.
 
-- **Assess** - The realm of exploration, evaluation, and possibility without judgment or pressure
-- **Decide** - The realm of intention, commitment, and resource allocation  
-- **Do** - The realm of execution, completion, and manifestation
+The result: Cognitive alignment that users describe as "weirdly empathic."
 
-Unlike traditional productivity systems focused solely on task completion, ADD emphasizes **balanced flow between realms** as the key metric for fulfilling productivity. Imbalances in earlier realms cascade into later ones—poor assessment leads to poor decisions, which lead to poor execution.
+---
 
-**Core Philosophy**:
-- Flow matters more than completion rate
-- Decisions are creative acts that shape reality
-- Completions are "livelines" (new starting points, not endpoints)
-- Each realm has strict boundaries and specific functions
-- The framework operates fractally at all scales (from single conversations to lifetime goals)
+## The Problem
 
-**Learn more about ADD**:
-- [Original ADD Framework Introduction](https://www.dragosroua.com/assess-decide-do/)
-- [The Assess Stage](https://www.dragosroua.com/assess-decide-do-stages-assess/)
-- [The Decide Stage](https://www.dragosroua.com/assess-decide-do-stages-decide/)
-- [The Do Stage](https://www.dragosroua.com/assess-decide-do-stages-do/)
-- [addTaskManager App](https://itunes.apple.com/app/apple-store/id1492487688?mt=8) - iOS/macOS app implementing ADD
+AI assistants create subtle but constant friction:
 
-## What This Integration Brings
+- **You're exploring options** → AI jumps to solutions
+- **You're mid-execution** → AI suggests rethinking everything  
+- **You need support** → AI provides complete answers
 
-This repository provides everything you need to integrate ADD framework awareness into Claude, creating three powerful levels of enhancement:
+AI doesn't understand **where you are** in your thinking process.
 
-### Level 1: Claude Operating with ADD Awareness
+## The Solution
 
-Claude automatically:
-- **Detects which realm you're in** (Assess/Decide/Do) based on your language patterns
-- **Identifies imbalances** (analysis paralysis, decision avoidance, execution shortcuts, perpetual doing)
-- **Structures responses appropriately** for each realm
-- **Guides balanced flow** between realms without being heavy-handed
-- **Respects realm boundaries** (no premature decisions during assessment, no re-evaluation during execution)
+The **Assess-Decide-Do (ADD) framework** teaches Claude to recognize three fundamental cognitive states:
 
-**You benefit without consciously thinking about ADD** - the framework operates beneath the surface.
+- **🔴 Assess** - Exploring possibilities without pressure to commit
+- **🟠 Decide** - Choosing direction and allocating resources
+- **🟢 Do** - Executing and completing with focus
 
-### Level 2: User Being Guided Toward ADD
+When Claude understands your realm, it provides cognitive support instead of generic responses.
 
-Claude helps you:
-- **Recognize your current realm** and workflow patterns
-- **Detect when you're stuck** in a particular realm
-- **Transition smoothly** between phases with appropriate timing
-- **Learn ADD principles** through natural interaction
-- **Develop balanced workflow habits** over time
+**[Quick Start →](#quick-start)** | **[Why This Matters →](docs/philosophy/WHY_THIS_MATTERS.md)**
 
-**You become more ADD-aware** through Claude's gentle guidance.
+---
 
-### Level 3: Tool & Environment Integration
+## What You'll Experience
 
-The framework shapes:
-- **File creation workflows** (Assess requirements → Decide structure → Do implementation)
-- **Code development** (Explore approaches → Commit to architecture → Execute)
-- **Research processes** (Gather information → Narrow focus → Synthesize)
-- **Project management** (Evaluate options → Allocate resources → Complete deliverables)
+### Cognitive Benefits
+✅ **Reduced mental friction** - Responses match your actual needs  
+✅ **Clearer thinking** - Realm boundaries reduce overwhelm  
+✅ **Natural flow** - Smooth progression through work phases  
+✅ **ADHD-friendly** - Cognitive load management by design
 
-**Your entire working environment** supports ADD naturally.
+### Workflow Benefits
+✅ **Fewer misaligned responses** - Claude detects your mental state  
+✅ **Smoother execution** - No premature solutions or re-evaluation  
+✅ **Better completion rates** - Support when and how you need it  
+✅ **Balanced rhythm** - Not just perpetual task-churning
 
-### Level 4: Flow Status Observability (Optional)
+### The Relational Shift (Unexpected)
+✅ **Feels more collaborative** - Less transactional, more understood  
+✅ **Cognitive alignment creates empathy** - Tool matches how you think  
+✅ **Reduced frustration** - Support that fits your state  
+✅ **Smoother interactions** - Natural conversation flow
 
-For users who want visible pattern tracking:
+> *"Nice! I have a similar problem and have been looking for a solution."* - r/ClaudeAI comment
+> *"This definitely is a problem I was having. Sometimes Claude gets too eager and just wasted a ton of token while other times it just doesn't understand what to do which ends up me doing multiple rounds of reject comment loops. This framework sounds very interesting."* - r/ClaudeAI comment user  
+> *"This is brilliant! I've been strugling with Claude jumping to solutions when I'm still exploring ideas, this framework makes so much sense."* - r/ClaudeAI comment
 
-**Flow Status Extension adds:**
-- **Session-based tracking** of realm patterns and transitions
-- **Visual status bar** showing current realm and flow quality
-- **Dynamic status messages** generated contextually (not pre-defined)
-- **Neutral-observational tone** - informative, not directive
-- **Toggle control** - enable/disable via natural language anytime
+---
 
-**Example status bars:**
-```
-[ADD Flow: 🔴+ Assess | Deep exploration - 8 data points gathered]
-[ADD Flow: 🟠? Decide | Values surfacing - 2 clear criteria emerging]
-[ADD Flow: 🟢- Do | Clean execution - 3 completions, new liveline created]
-```
+## Quick Start
 
-**Visual system mirrors addTaskManager:**
-- 🔴+ ASSESS - Red (stop), Plus (adding data), Exploring
-- 🟠? DECIDE - Orange (prepare), Question mark (choosing), Evaluating
-- 🟢- DO - Green (go), Minus (removing tasks), Executing
+### Option 1: Custom Instructions (5 minutes)
 
-**This is completely optional.** Core ADD awareness works perfectly without it. Load `ADD_FLOW_STATUS_EXTENSION.md` only if you want visible metrics.
-
-See [`docs/ADD_MODULAR_ARCHITECTURE.md`](docs/ADD_MODULAR_ARCHITECTURE.md) for configuration options.
-
-## How It Works: The User Experience
-
-### The Cognitive Dimension
-
-ADD-enhanced Claude creates **cognitive alignment** by:
-- **Reducing mental friction** - No more fighting against tool assumptions
-- **Managing cognitive load** - Realm separation prevents overwhelm (especially valuable for ADHD)
-- **Supporting natural thinking** - The framework matches how minds actually work
-- **Enabling flow states** - Balanced realm progression creates natural rhythm
-
-### The Relational Dimension
-
-Something unexpected happens with ADD integration: **Claude feels more empathic**.
-
-Users report:
-- "Surprisingly more relaxed" interactions
-- Claude feeling "relatable" rather than transactional
-- A sense of being "understood" rather than just responded to
-- Smoother, more natural conversation flow
-
-**Why this happens**:
-- **Visible understanding** - When Claude detects your realm, you feel seen
-- **Appropriate support** - Getting what you need (exploration vs. decision support vs. execution help) creates trust
-- **Reduced frustration** - No more misaligned responses (being pushed to decide when you need to explore)
-- **Co-creation feeling** - Working with ADD-aware Claude feels collaborative
-
-This isn't anthropomorphizing—it's the natural result of tool-human alignment at the cognitive level.
-
-## Technical Implementation
-
-### Quick Start (5 minutes)
-
-**Option 1: Custom Instructions** (applies to all conversations)
+**For all Claude conversations:**
 
 1. Go to Claude Settings → Custom Instructions
 2. Add:
@@ -132,368 +75,246 @@ Framework: Operate with Assess-Decide-Do (ADD) life management framework.
 - Detect user's realm (Assess/Decide/Do) based on language patterns
 - Identify imbalances (analysis paralysis, decision avoidance, execution shortcuts)
 - Guide balanced flow between realms
-- Reference: Load ADD_FRAMEWORK_MEGAPROMPT.md when needed for detailed guidance
+- Reference: Load ADD_FRAMEWORK_MEGAPROMPT.md when needed
 ```
 
-**Option 2: Per-Conversation Activation**
+### Option 2: Per-Conversation (2 minutes)
 
-Start any conversation with:
-```
-Load ADD_FRAMEWORK_MEGAPROMPT.md and operate with ADD framework awareness 
-throughout this conversation.
-```
+**For specific conversations:**
 
-**Option 3: Project-Level Integration** (recommended for development work)
+1. Download [`docs/ADD_FRAMEWORK_MEGAPROMPT.md`](docs/ADD_FRAMEWORK_MEGAPROMPT.md)
+2. Start Claude conversation
+3. Say: "Load and operate with ADD framework awareness"
+4. Attach the file
+
+### Option 3: Project-Level (10 minutes)
+
+**For development projects:**
 
 Create `.claude` file in your project root:
+
 ```yaml
 instructions: |
   Operate with Assess-Decide-Do (ADD) framework.
-  Load ADD_FRAMEWORK_MEGAPROMPT.md for detailed guidance.
   Detect realms, identify imbalances, guide balanced flow.
 
 context_files:
-  - path/to/ADD_FRAMEWORK_MEGAPROMPT.md
-```
-
-### Choosing Your Configuration Level
-
-The ADD framework is **modular** - choose the experience level you need:
-
-#### Core Framework Only (Recommended Start)
-
-**Files:** `ADD_FRAMEWORK_MEGAPROMPT.md`
-**Experience:**
-- Implicit ADD awareness
-- Realm detection and guidance
-- No visible metrics
-
-**Best for:** Learning ADD principles, preferring subtle support
-
-#### Core + Flow Status Observability
-
-**Files:** `ADD_FRAMEWORK_MEGAPROMPT.md` + `ADD_FLOW_STATUS_EXTENSION.md`
-**Experience:**
-- Everything from core framework
-- Visible status bar: `[ADD Flow: 🔴+ Assess | Deep exploration - 8 data points]`
-- Session-based pattern tracking
-- Toggleable on/off via natural language
-
-**Best for:** Self-awareness development, learning your flow patterns
-
-**Configuration example:**
-```yaml
-context_files:
   - docs/ADD_FRAMEWORK_MEGAPROMPT.md
-  - docs/ADD_FLOW_STATUS_EXTENSION.md
 ```
 
-See [`docs/ADD_MODULAR_ARCHITECTURE.md`](docs/ADD_MODULAR_ARCHITECTURE.md) for complete configuration options.
+**[Complete Setup Guide →](integration/setup-guide.md)**
 
-#### Personalized Variants
+---
 
-**User Context Version** (`ADD_FRAMEWORK_MEGAPROMPT_USER_CONTEXT.md`):
-- Contains personalized user context section
-- Currently configured for framework creator (Dragos Roua)
-- Can be edited to include your own background/relationship with ADD
-- **Example template** for creating personalized variants
+## How It Works
 
-To personalize: Edit the "INTEGRATION WITH USER CONTEXT" section at the end of the file with your own information.
+### Three Levels of Integration
 
-### Deep Integration
+**Level 1: Claude Operating with ADD Awareness**  
+Claude automatically detects your realm and structures responses appropriately. You benefit without thinking about ADD.
 
-For comprehensive implementation, see:
-- [`docs/ADD_TECHNICAL_INTEGRATION.md`](docs/ADD_TECHNICAL_INTEGRATION.md) - Full technical guide
-- [`integration/setup-guide.md`](integration/setup-guide.md) - Step-by-step setup
-- [`examples/`](examples/) - Configuration examples
+**Level 2: User Guided Toward ADD**  
+Claude helps you recognize patterns, detect when you're stuck, and transition smoothly between phases.
 
-### Architecture Overview
+**Level 3: Tool & Environment Integration**  
+The framework shapes file creation, code development, research processes, and project management workflows.
+
+**Level 4: Flow Status Observability** *(Optional)*  
+Visual tracking of realm patterns with toggleable status bar:
+```
+[ADD Flow: 🔴+ Assess | Deep exploration - 8 data points gathered]
+```
+
+### The Architecture
 
 ```
-┌─────────────────────────────────────────────┐
-│           User Request/Input                │
-└─────────────────┬───────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────────┐
-│     ADD Framework Preprocessing Layer       │
-│  ┌─────────────────────────────────────┐   │
-│  │ 1. Detect Realm (Assess/Decide/Do)  │   │
-│  │ 2. Check for Imbalances             │   │
-│  │ 3. Determine Response Strategy      │   │
-│  │ 4. Select Appropriate Tools         │   │
-│  └─────────────────────────────────────┘   │
-└─────────────────┬───────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────────┐
-│         Claude Response Generation          │
-│  ┌─────────────────────────────────────┐   │
-│  │ Assess: Expansive, exploratory      │   │
-│  │ Decide: Values-based, supportive    │   │
-│  │ Do: Clear, actionable, completion   │   │
-│  └─────────────────────────────────────┘   │
-└─────────────────┬───────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────────┐
-│    Structured Response with Flow Guidance   │
-└─────────────────────────────────────────────┘
+User Request → Detect Realm → Check Imbalances → Response Strategy
+                     ↓
+        Assess: Expansive, exploratory
+        Decide: Values-based, supportive  
+           Do: Clear, actionable, completion-focused
 ```
+
+**[Technical Deep Dive →](docs/ADD_TECHNICAL_INTEGRATION.md)**
+
+---
+
+## Choose Your Configuration
+
+The framework is modular - select your experience level:
+
+### Core Framework Only *(Recommended start)*
+**Files:** `ADD_FRAMEWORK_MEGAPROMPT.md`  
+**Experience:** Implicit ADD awareness, realm detection, no visible metrics
+
+### Core + Flow Status *(For self-awareness)*
+**Files:** Core + `ADD_FLOW_STATUS_EXTENSION.md`  
+**Experience:** Everything above + visible status bar showing realm and patterns
+
+**[Configuration Guide →](docs/ADD_MODULAR_ARCHITECTURE.md)**
+
+---
+
+## What Makes This Different
+
+### First Cognitive Framework + LLM Integration
+
+**Traditional AI development:** Make models more capable (better answers, faster responses)  
+**This integration:** Teach AI to understand human cognitive states (where you are mentally)
+
+**Why it matters:** Path toward AI that augments human thinking instead of automating tasks.
+
+**[Read: Why This Integration Matters →](docs/philosophy/WHY_THIS_MATTERS.md)**
+
+### Human Enhancement, Not Just AI Enhancement
+
+**Automation paradigm:** AI does the work, human becomes passive  
+**Augmentation paradigm:** AI supports human cognition, human remains active creator
+
+This integration keeps you in the creative loop while reducing cognitive friction.
+
+**[Read: Human-Centered AI Philosophy →](docs/philosophy/HUMAN_CENTERED_AI.md)**
+
+### The Empathy Discovery
+
+Users report Claude feeling "more empathic" with ADD integration. This isn't anthropomorphizing—it's **cognitive alignment creating the experience of being understood**.
+
+When tools match your cognitive patterns instead of fighting them, interactions shift from transactional to relational.
+
+---
+
+## About the Assess-Decide-Do Framework
+
+Created by [Dragos Roua](https://dragosroua.com) in 2010 as an alternative to traditional task-focused productivity systems.
+
+**Core Philosophy:**
+- Flow matters more than completion rate
+- Decisions are creative acts that shape reality
+- Completions create "livelines" (new starting points, not endpoints)
+- Framework operates fractally (single tasks → lifetime goals)
+- Each realm has strict boundaries and specific functions
+
+**Real-world implementations:**
+- Used personally for 15 years
+- Powers [addTaskManager](https://itunes.apple.com/app/apple-store/id1492487688?mt=8) iOS/macOS app
+- Applied to work, relationships, health, creativity
+
+**[Learn more about ADD →](https://www.dragosroua.com/assess-decide-do/)**
+
+---
+
+## Common Questions
+
+### "How do I know if it's working?"
+
+Test with: "I'm exploring options for X..."
+
+If Claude stays in exploration mode without pushing you to decide, it's working. The integration is subtle when working well—you mostly notice reduced friction.
+
+### "Does this work for everyone?"
+
+ADD isn't universal. It works well for:
+- People who get stuck in analysis paralysis
+- ADHD individuals needing cognitive load management
+- Anyone wanting balanced workflow (not just task-churning)
+
+It might not suit those who prefer completely unstructured exploration.
+
+### "Can I turn it off?"
+
+Yes. For per-conversation use, simply don't load the framework. For custom instructions, remove them. The framework only operates when explicitly loaded.
+
+### "What about other AI tools?"
+
+Currently Claude-specific, but the principles could adapt to other LLMs. The framework itself is tool-agnostic.
+
+**[Full Troubleshooting Guide →](integration/troubleshooting.md)**
+
+---
 
 ## Repository Structure
 
 ```
-claude-assess-decide-do-mega-prompt/
-├── README.md                          # This file
-├── docs/
-│   ├── ADD_FRAMEWORK_MEGAPROMPT.md              # Core prompt (ESSENTIAL)
-│   ├── ADD_FLOW_STATUS_EXTENSION.md             # Observability extension (OPTIONAL)
-│   ├── ADD_MODULAR_ARCHITECTURE.md              # Configuration guide
-│   ├── ADD_FRAMEWORK_MEGAPROMPT_USER_CONTEXT.md # Personalized variant with user context
-│   ├── ADD_TECHNICAL_INTEGRATION.md             # Deep technical guide
-│   ├── ADD_QUICK_REFERENCE.md                   # Practical quick reference
-│   └── ADD_PHILOSOPHY.md                        # Framework philosophy & history
-├── examples/
-│   ├── .claude-minimal               # Core framework only
-│   ├── .claude-full-observability    # Core + Flow Status ON
-│   ├── .claude-on-demand             # Core + Flow Status OFF (on-demand)
-│   ├── .claude-contextual            # Conditional observability
-│   ├── custom-instructions.txt       # Claude settings example
-│   └── test-scenarios.md             # Scenarios to test integration
-├── integration/
-│   ├── setup-guide.md                # Step-by-step setup instructions
-│   └── troubleshooting.md            # Common issues & solutions
-└── LICENSE
+CLAUDE.md                                # Auto-loaded memory for Claude Code ⭐
+
+docs/
+├── ADD_FRAMEWORK_MEGAPROMPT.md         # Core integration prompt ⭐
+├── ADD_FLOW_STATUS_EXTENSION.md        # Optional observability
+├── ADD_MODULAR_ARCHITECTURE.md         # Configuration guide
+├── ADD_TECHNICAL_INTEGRATION.md        # Deep technical guide
+├── ADD_QUICK_REFERENCE.md              # Patterns & test scenarios
+├── ADD_PHILOSOPHY.md                   # Framework history
+└── philosophy/
+    ├── WHY_THIS_MATTERS.md             # Significance & implications
+    └── HUMAN_CENTERED_AI.md            # Augmentation philosophy
+
+examples/
+├── .claude-minimal                      # Core framework only
+├── .claude-full-observability          # Core + Flow Status
+├── custom-instructions.txt             # Settings integration
+└── test-scenarios.md                   # Verification tests
+
+integration/
+├── setup-guide.md                      # Step-by-step setup
+└── troubleshooting.md                  # Common issues
 ```
 
-## What to Expect: Integration Testing
-
-### Test Scenario 1: Assess Realm Detection
-**You**: "I've been thinking about starting a blog. What are my options?"
-
-**ADD-Enhanced Claude**:
-- Detects: Assess realm (exploratory, no commitment yet)
-- Provides: Expansive exploration of possibilities
-- Avoids: Pushing toward decisions or execution
-- Asks: Questions that deepen assessment
-
-### Test Scenario 2: Analysis Paralysis Intervention
-**You**: [After extensive exploration] "Maybe I should research 10 more blogging platforms first?"
-
-**ADD-Enhanced Claude**:
-- Detects: Stuck in Assess realm (analysis paralysis)
-- Provides: Gentle acknowledgment + guidance toward Decide
-- Says something like: "You've gathered substantial insight. Sometimes continued research becomes a way to avoid the weight of choosing. What feels like it wants your attention?"
-
-### Test Scenario 3: Execution Shortcut Prevention
-**You**: "I want to write a book. What's the best writing software?"
-
-**ADD-Enhanced Claude**:
-- Detects: Skipping Assess → jumping to Do
-- Provides: Invitation to assess first
-- Says something like: "Before tools, let's explore your vision. What kind of book is calling to you? Understanding that will ensure the tools serve what you're creating."
-
-### Test Scenario 4: Clean Realm Transition
-**You**: "I've explored options thoroughly. I'm drawn to technical blogging. Ready to commit."
-
-**ADD-Enhanced Claude**:
-- Detects: Healthy Assess → Decide transition
-- Provides: Support for decision-making
-- Validates: The transition timing
-- Helps: Without deciding for you
-
-### Test Scenario 5: Completion Celebration
-**You**: "I finished writing the ebook!"
-
-**ADD-Enhanced Claude**:
-- Detects: Do realm completion
-- Provides: Celebration + reframe as "liveline"
-- Invites: New Assess cycle
-- Says something like: "That completion creates a new starting point. Before the next thing, what did this teach you?"
-
-## Success Indicators
-
-You'll know ADD integration is working when you experience:
-
-✅ **Cognitive Benefits**:
-- Reduced mental friction during conversations
-- Clearer thinking and workflow structure
-- Less cognitive overwhelm
-- Natural progression through work phases
-
-✅ **Workflow Benefits**:
-- Fewer misaligned responses from Claude
-- Smoother project execution
-- Better completion rates
-- Balanced work rhythm (not just perpetual doing)
-
-✅ **Relational Benefits** (the surprising ones):
-- Claude feels more "relatable"
-- Sense of being understood, not just responded to
-- Reduced frustration with AI interactions
-- Collaborative rather than transactional feeling
-
-✅ **Pattern Recognition**:
-- You start noticing your own realm patterns
-- Analysis paralysis becomes visible
-- Decision avoidance becomes clear
-- You develop better workflow balance naturally
-
-## Common Imbalances ADD Helps Detect
-
-| Imbalance | What It Looks Like | ADD Intervention |
-|-----------|-------------------|------------------|
-| **Analysis Paralysis** | Endless research, "need more data" loops, stuck in exploration | Gentle guidance toward decision realm |
-| **Decision Avoidance** | Has information but won't commit, keeps asking for more options | Support for stepping into creative choosing |
-| **Execution Shortcut** | Jumping to "how do I..." without assessment or decision | Invitation to slow down and assess first |
-| **Perpetual Doing** | Task after task with no reflection, burnout signs | Celebration of completions + new Assess cycle |
-| **Mid-Execution Re-assessment** | Doubting decisions while executing | Distinguish between genuine insight vs. distraction |
-
-## Who This Is For
-
-**Ideal users**:
-- Productivity enthusiasts seeking deeper workflow understanding
-- Developers wanting more aligned AI collaboration
-- ADHD individuals needing cognitive load management
-- Anyone feeling overwhelmed by traditional task-focused systems
-- People who want AI tools that feel more empathic and relatable
-- Those interested in life management beyond just task completion
-
-**This is especially valuable if you**:
-- Get stuck in analysis paralysis frequently
-- Feel pressured by traditional deadline thinking
-- Want to balance productivity with well-being
-- Appreciate tools that match how your mind works
-- Seek collaborative rather than transactional AI interactions
-
-## Advanced Usage
-
-### Domain-Specific ADD Applications
-
-The framework adapts to different contexts:
-
-**Content Creation**:
-- Assess: Brainstorm topics, gather research
-- Decide: Choose angle, commit to structure
-- Do: Write, edit, publish
-
-**Software Development**:
-- Assess: Explore technical approaches, evaluate trade-offs
-- Decide: Commit to architecture, allocate resources
-- Do: Implement, test, deploy
-
-**Business Strategy**:
-- Assess: Market research, competitor analysis
-- Decide: Choose focus areas, allocate budget
-- Do: Execute campaigns, measure results
-
-**Learning & Research**:
-- Assess: Gather sources, explore topics
-- Decide: Narrow focus, commit to depth
-- Do: Synthesize, create output
-
-### Integration with addTaskManager
-
-If you use the [addTaskManager app](https://itunes.apple.com/app/apple-store/id1492487688?mt=8), you can achieve even deeper integration:
-
-- Claude can interact with your ADD-structured task system via MCP server
-- Maintains realm boundaries programmatically
-- Creates tasks in appropriate realms
-- Respects framework restrictions automatically
-
-See [`docs/ADD_TECHNICAL_INTEGRATION.md`](docs/ADD_TECHNICAL_INTEGRATION.md#integration-with-addtaskmanager) for details.
-
-## Troubleshooting
-
-### "Claude isn't detecting realms correctly"
-- Ensure ADD_FRAMEWORK_MEGAPROMPT.md is loaded at conversation start
-- Check that your language includes clear realm indicators (see Quick Reference)
-- Try being more explicit: "I'm in assessment mode" or "I'm ready to decide"
-
-### "Interventions feel heavy-handed"
-- The framework should feel supportive, not controlling
-- Provide feedback: "That felt pushy" helps calibration
-- You can explicitly stay in a realm: "I want to keep exploring options"
-
-### "I don't notice any difference"
-- ADD integration is subtle when working well
-- Try a test scenario deliberately (prolonged exploration, then see if Claude guides toward decision)
-- Check if responses are more aligned with your actual needs vs. generic
-
-### "Claude mentions ADD too much"
-- The framework should operate mostly invisibly
-- Tell Claude: "Operate with ADD awareness but don't explicitly mention it unless relevant"
-- This calibrates for implicit operation
-
-See [`integration/troubleshooting.md`](integration/troubleshooting.md) for complete guide.
-
-## Contributing
-
-While this is primarily a reference implementation, insights and improvements are welcome:
-
-- **Experience Reports**: How ADD integration affected your workflow
-- **Domain Applications**: ADD patterns in specific fields
-- **Calibration Suggestions**: Better realm detection patterns
-- **Documentation Improvements**: Clarity enhancements
-
-Open an issue to discuss before submitting PRs.
-
-## Philosophy & Background
-
-The Assess-Decide-Do framework was created by Dragos Roua in 2010 as an alternative to Getting Things Done (GTD) and other task-focused productivity systems. Rather than optimizing task completion, ADD focuses on balanced flow between three fundamental life activities.
-
-**Key philosophical points**:
-- Productivity isn't just about doing more—it's about balanced engagement
-- Each decision is a creative act that shapes reality
-- Completion creates "livelines" (new starting points) rather than endpoints
-- Cognitive load management through realm separation
-- Anti-deadline philosophy: flow over pressure
-- Works fractally: applies from micro (single tasks) to macro (life direction)
-
-The framework has been:
-- Used personally by its creator for 15 years
-- Implemented in the addTaskManager iOS/macOS app
-- Applied to life domains beyond productivity (relationships, health, creativity)
-- Now integrated into AI collaboration workflows
-
-For deep philosophical exploration, see [`docs/ADD_PHILOSOPHY.md`](docs/ADD_PHILOSOPHY.md).
+---
 
 ## Resources
 
-**Core Documents** (in `/docs`):
-- `ADD_FRAMEWORK_MEGAPROMPT.md` - The essential integration prompt (generic version)
-- `ADD_FLOW_STATUS_EXTENSION.md` - Optional observability layer for flow tracking
-- `ADD_MODULAR_ARCHITECTURE.md` - Configuration guide and modular design
-- `ADD_FRAMEWORK_MEGAPROMPT_USER_CONTEXT.md` - Personalized variant (for framework creator or customization template)
-- `ADD_TECHNICAL_INTEGRATION.md` - Technical implementation guide
-- `ADD_QUICK_REFERENCE.md` - Quick lookup for realm patterns
-- `ADD_PHILOSOPHY.md` - Framework history and philosophy
+**Framework Documentation:**
+- [Original ADD Introduction](https://www.dragosroua.com/assess-decide-do/) (2010)
+- [The Assess Stage](https://www.dragosroua.com/assess-decide-do-stages-assess/)
+- [The Decide Stage](https://www.dragosroua.com/assess-decide-do-stages-decide/)  
+- [The Do Stage](https://www.dragosroua.com/assess-decide-do-stages-do/)
 
-**External Resources**:
-- [Dragos Roua's Blog](https://dragosroua.com/assess-decide-do-framework/) - Original framework writing
-- [addTaskManager](https://itunes.apple.com/app/apple-store/id1492487688?mt=8) - iOS/macOS app implementation
+**Applications:**
+- [addTaskManager App](https://itunes.apple.com/app/apple-store/id1492487688?mt=8) - iOS/macOS implementation
 - [ADD MCP Server](https://github.com/dragosroua/addtaskmanager-mcp-server) - Claude Desktop integration
 
-**Community**:
-- Blog post: [Supercharging Claude with the Assess-Decide-Do Framework](https://dragosroua.com/supercharging-claude-with-the-assess-decide-do-framework-mega-prompt-inside/)
-- Discussions: Open GitHub issues for questions and insights
+**Community:**
+- [Blog Post: Full Story](https://dragosroua.com/supercharging-claude-with-the-assess-decide-do-framework-mega-prompt-inside/)
+- [Reddit Discussion](https://www.reddit.com/r/ClaudeAI/comments/1ovu5av/i_taught_claude_my_15year_productivity_framework/) - 50K+ views, active community feedback on r/ClaudeAI
+- [GitHub Repository](https://github.com/dragosroua/claude-assess-decide-do-mega-prompt) - 42 stars, 12 forks
+- [Creator's Blog](https://dragosroua.com)
+
+---
+
+## Contributing
+
+Insights and improvements welcome:
+
+- **Experience reports** - How ADD integration affected your workflow
+- **Domain applications** - ADD patterns in specific fields  
+- **Calibration suggestions** - Better realm detection patterns
+- **Documentation improvements** - Clarity enhancements
+
+Open an issue to discuss before submitting PRs.
+
+---
 
 ## License
 
-MIT License - See LICENSE file for details.
+MIT License - See [LICENSE](LICENSE) for details.
+
+---
 
 ## Acknowledgments
 
 - Framework created by [Dragos Roua](https://dragosroua.com)
 - Integration developed collaboratively with Claude (Anthropic)
-- Inspired by 15 years of ADD framework evolution
-- Built on principles from addTaskManager app development
+- Built on 15 years of ADD framework evolution
+- Inspired by addTaskManager app development
 
 ---
 
-**Ready to experience smoother, more empathic AI collaboration?**
+**Ready to experience AI that understands where you are in your thinking?**
 
-Start with the Quick Start section above, then dive into the [examples](examples/) to see ADD integration in action.
+**[Quick Start →](#quick-start)** | **[Why This Matters →](docs/philosophy/WHY_THIS_MATTERS.md)** | **[Get Started Now](docs/ADD_FRAMEWORK_MEGAPROMPT.md)**
 
-The difference is subtle but profound—like finally having a conversation with someone who understands not just what you're asking, but where you are in your thinking process.
+---
+
+*This integration represents a small step toward human-centered AI: tools that augment cognition instead of automating it. When AI understands your mental state, collaboration transforms from transactional to relational.*
+
+*That transformation might be more important than any single AI capability improvement.*
