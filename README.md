@@ -108,6 +108,24 @@ context_files:
 
 ---
 
+## Claude Code Users: Enhanced Integration
+
+If you're using **Claude Code**, enable persistent visual statusline for real-time flow tracking:
+
+**What you get:**
+- 🔴 🟠 🟢 Visual realm indicator at bottom of interface
+- Live flow status updates as conversation progresses
+- Session metrics tracked and available on natural language request
+
+**Example statusline:**
+```
+[ADD Flow: 🔴+ Assess | Exploring implementation options]
+```
+
+**[Setup Claude Code Statusline →](docs/CLAUDE_CODE_STATUSLINE.md)** (10 minutes)
+
+---
+
 ## How It Works
 
 ### Three Levels of Integration
@@ -242,6 +260,7 @@ CLAUDE.md                                # Auto-loaded memory for Claude Code �
 docs/
 ├── ADD_FRAMEWORK_MEGAPROMPT.md         # Core integration prompt ⭐
 ├── ADD_FLOW_STATUS_EXTENSION.md        # Optional observability
+├── CLAUDE_CODE_STATUSLINE.md           # Claude Code statusline setup
 ├── ADD_MODULAR_ARCHITECTURE.md         # Configuration guide
 ├── ADD_TECHNICAL_INTEGRATION.md        # Deep technical guide
 ├── ADD_QUICK_REFERENCE.md              # Patterns & test scenarios
@@ -249,6 +268,11 @@ docs/
 └── philosophy/
     ├── WHY_THIS_MATTERS.md             # Significance & implications
     └── HUMAN_CENTERED_AI.md            # Augmentation philosophy
+
+templates/
+└── claude-code/
+    ├── statusline.sh                   # Statusline script template
+    └── settings.json                   # Settings configuration example
 
 examples/
 ├── .claude-minimal                      # Core framework only

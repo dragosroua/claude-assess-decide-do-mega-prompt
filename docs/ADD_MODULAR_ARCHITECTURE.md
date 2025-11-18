@@ -156,6 +156,59 @@ instructions: |
   - Simple questions
 ```
 
+### Level 5: Claude Code Statusline Integration
+
+**What's loaded:**
+- Core framework awareness (Level 1)
+- Flow Status Extension (Level 2)
+- **Persistent statusline display** (Claude Code specific)
+
+**Files needed:**
+- `.claude/statusline.sh` - Display script
+- `.claude/settings.json` - Statusline configuration
+- `.add-status` - Session state (auto-generated)
+
+**Experience:**
+```
+[ADD Flow: 🔴+ Assess | Exploring implementation options]
+```
+
+Visible at bottom of Claude Code interface, updates in real-time as conversation progresses.
+
+**Use case:** Claude Code users wanting ambient flow awareness without cluttering conversation
+
+**Benefits:**
+- Always-visible realm tracking
+- Real-time status updates (max 300ms)
+- Project-specific flow state
+- Session metrics tracked internally
+- Available on natural language request
+
+**Configuration:**
+
+**CLAUDE.md:**
+```markdown
+Operate with ADD framework awareness.
+Enable flow status tracking.
+
+For Claude Code users: Visual statusline configured separately.
+```
+
+**.claude/settings.json:**
+```json
+{
+  "statusLine": {
+    "type": "command",
+    "command": ".claude/statusline.sh",
+    "padding": 0
+  }
+}
+```
+
+**Setup:** See [Claude Code Statusline Guide](CLAUDE_CODE_STATUSLINE.md) for complete instructions.
+
+**Note:** This level is Claude Code-specific. For claude.ai or Claude Desktop, use Levels 1-4.
+
 ## Component Relationships
 
 ### Independence
