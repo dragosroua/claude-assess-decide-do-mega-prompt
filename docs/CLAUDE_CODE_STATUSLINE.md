@@ -428,9 +428,9 @@ echo "$realm" > "$PREV_REALM_FILE"
 4. Ask Claude for session metrics when curious
 
 **Learn more:**
-- [ADD Framework Core](../ADD_FRAMEWORK_MEGAPROMPT.md) - Deep framework understanding
-- [Flow Status Extension](../ADD_FLOW_STATUS_EXTENSION.md) - Observability layer details
-- [Modular Architecture](../ADD_MODULAR_ARCHITECTURE.md) - Configuration levels
+- [ADD Framework Core](ADD_FRAMEWORK_MEGAPROMPT.md) - Deep framework understanding
+- [Flow Status Extension](ADD_FLOW_STATUS_EXTENSION.md) - Observability layer details
+- [Modular Architecture](ADD_MODULAR_ARCHITECTURE.md) - Configuration levels
 
 **Get help:**
 - [Main Troubleshooting Guide](../integration/troubleshooting.md)
