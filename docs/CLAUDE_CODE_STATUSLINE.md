@@ -433,7 +433,6 @@ echo "$realm" > "$PREV_REALM_FILE"
 - [Modular Architecture](../ADD_MODULAR_ARCHITECTURE.md) - Configuration levels
 
 **Get help:**
-- [GitHub Discussions](https://github.com/dragosroua/claude-assess-decide-do-mega-prompt/discussions)
 - [Main Troubleshooting Guide](../../integration/troubleshooting.md)
 
 ---
