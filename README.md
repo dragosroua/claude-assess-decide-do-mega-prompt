@@ -2,7 +2,7 @@
 
 [![ADD Framework Integration](assets/hero-claude-mega-prompt.png)](https://dragosroua.com/supercharging-claude-with-the-assess-decide-do-framework-mega-prompt-inside/)
 
-[![GitHub stars](https://img.shields.io/github/stars/dragosroua/claude-assess-decide-do-mega-prompt?style=social)](https://github.com/dragosroua/claude-assess-decide-do-mega-prompt)
+[![GitHub stars](https://img.shields.io/github/stars/dragosroua/claude-assess-decide-do-mega-prompt?style=social)](https://github.com/dragosroua/claude-assess-decide-do-mega-prompt) [![GitHub Sponsors](https://img.shields.io/github/sponsors/dragosroua?style=social)](https://github.com/sponsors/YOUR-USERNAME)
 
 **What if AI didn't just answer questions, but understood whether you're exploring, deciding, or executing?**
 
