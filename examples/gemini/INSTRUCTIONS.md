@@ -1,4 +1,4 @@
-Option A: Using Google AI Studio (Recommended for Builders)
+## Option A: Using Google AI Studio (Recommended for Builders)
 
 1. Go to Google AI Studio.
 
@@ -12,7 +12,7 @@ Option A: Using Google AI Studio (Recommended for Builders)
 
 6. Save this as "ADD Framework Agent".
 
-Option B: Using Gemini Advanced / Consumer App
+## Option B: Using Gemini Advanced / Consumer App
 
 1. Open a new chat.
 

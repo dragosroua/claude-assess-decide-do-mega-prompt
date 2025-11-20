@@ -443,11 +443,10 @@ github.com/add-framework/  (umbrella organization)
 - [Examples Directory](../examples/) - All model examples
 
 **External:**
-- [Original ADD Framework](https://www.dragosroua.com/assess-decide-do/) - Philosophy and background
+- [Original ADD Framework](https://dragosroua.com/assess-decide-do-framework/) - Philosophy and background
 - [addTaskManager App](https://itunes.apple.com/app/apple-store/id1492487688?mt=8) - iOS/macOS implementation
 
 **Community:**
-- [GitHub Discussions](https://github.com/dragosroua/claude-assess-decide-do-mega-prompt/discussions) - Questions and insights
 - [Issues](https://github.com/dragosroua/claude-assess-decide-do-mega-prompt/issues) - Bug reports and feature requests
 
 ---
