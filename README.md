@@ -221,6 +221,18 @@ Created by [Dragos Roua](https://dragosroua.com) in 2010 as an alternative to tr
 
 **[Learn more about ADD →](https://www.dragosroua.com/assess-decide-do/)**
 
+### Multi-Model Compatibility
+
+The ADD framework has been successfully tested with multiple LLMs:
+- **Claude** (Anthropic) - Primary implementation, fully documented
+- **Gemini** (Google) - Compatible, tested
+- **Grok** (xAI) - Compatible, tested
+- **Kimi** (Moonshot AI) - Compatible, tested
+
+The core principles translate across models, though setup and language may vary by platform.
+
+**[Multi-Model Setup Guide →](docs/MULTI_MODEL_GUIDE.md)**
+
 ---
 
 ## Common Questions
@@ -246,7 +258,15 @@ Yes. For per-conversation use, simply don't load the framework. For custom instr
 
 ### "What about other AI tools?"
 
-Currently Claude-specific, but the principles could adapt to other LLMs. The framework itself is tool-agnostic.
+**Yes!** The ADD framework has been tested with multiple LLMs:
+- **Claude** (Anthropic) - Primary, fully documented
+- **Gemini** (Google) - Compatible, tested
+- **Grok** (xAI) - Compatible, tested
+- **Kimi** (Moonshot AI) - Compatible, tested
+
+The core principles are model-agnostic. See [Multi-Model Guide](docs/MULTI_MODEL_GUIDE.md) for setup instructions.
+
+**Community contributions welcome** for additional models!
 
 **[Full Troubleshooting Guide →](integration/troubleshooting.md)**
 
@@ -261,6 +281,7 @@ docs/
 ├── ADD_FRAMEWORK_MEGAPROMPT.md         # Core integration prompt ⭐
 ├── ADD_FLOW_STATUS_EXTENSION.md        # Optional observability
 ├── CLAUDE_CODE_STATUSLINE.md           # Claude Code statusline setup
+├── MULTI_MODEL_GUIDE.md                # Multi-model compatibility guide
 ├── ADD_MODULAR_ARCHITECTURE.md         # Configuration guide
 ├── ADD_TECHNICAL_INTEGRATION.md        # Deep technical guide
 ├── ADD_QUICK_REFERENCE.md              # Patterns & test scenarios
@@ -277,8 +298,20 @@ templates/
 examples/
 ├── .claude-minimal                      # Core framework only
 ├── .claude-full-observability          # Core + Flow Status
-├── custom-instructions.txt             # Settings integration
-└── test-scenarios.md                   # Verification tests
+├── .claude-on-demand                   # Flow Status on-demand
+├── .claude-contextual                  # Conditional observability
+├── custom-instructions.txt             # Claude settings example
+├── test-scenarios.md                   # Verification tests
+├── gemini/                             # Gemini-specific
+│   ├── GEMINI_ADD_MEGAPROMPT.md
+│   ├── INSTRUCTIONS.md
+│   └── CLI_INSTRUCTIONS.md
+├── grok/                               # Grok-specific
+│   ├── GROK_ADD_MEGAPROMPT.md
+│   └── INSTRUCTIONS.md
+└── kimi/                               # Kimi-specific
+    ├── KIMI_ADD_MEGAPROMPT.md
+    └── INSTRUCTIONS.md
 
 integration/
 ├── setup-guide.md                      # Step-by-step setup
