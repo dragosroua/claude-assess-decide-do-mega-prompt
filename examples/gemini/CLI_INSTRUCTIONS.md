@@ -27,7 +27,7 @@ alias gemini-add='gemini --context ~/.gemini/prompts/ADD_FRAMEWORK.md'
    (Note: Depending on your gemini-cli version, you might need to use -p with a file pipe or check if it supports a specific context flag. If the flag isn't supported directly, use the piping method below):
    
    _Robust Alternative for any version_
-   
+
 alias gemini-add='cat ~/.gemini/prompts/ADD_FRAMEWORK.md | gemini'
 
  * Usage:
@@ -51,4 +51,5 @@ Use this if you want Gemini to always act this way, for every single interaction
 | Project (GEMINI.md) | You are building a specific app and want a strategist. | Create GEMINI.md in project root. |
 | Alias (gemini-add) | You use Gemini casually, but sometimes need a "Workflow Fixer." | Add alias to shell config. |
 | Global (~/.gemini/) | You want this to be your default AI assistant persona. | Add to ~/.gemini/GEMINI.md. |
+
 Pro Tip: Since gemini-cli is text-based, the Table Output in the "Decide" phase of my prompt might render as Markdown. gemini-cli handles Markdown rendering beautifully, so the tables will look clean in your terminal.
