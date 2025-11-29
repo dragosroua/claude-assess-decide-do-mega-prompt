@@ -329,8 +329,9 @@ integration/
 - [The Do Stage](https://www.dragosroua.com/assess-decide-do-stages-do/)
 
 **Applications:**
-- [addTaskManager App](https://itunes.apple.com/app/apple-store/id1492487688?mt=8) - iOS/macOS implementation
-- [ADD MCP Server](https://github.com/dragosroua/addtaskmanager-mcp-server) - Claude Desktop integration
+- [addTaskManager App](https://itunes.apple.com/app/apple-store/id1492487688?mt=8) - [ app ] iOS/macOS implementation
+- [ADD MCP Server](https://github.com/dragosroua/addtaskmanager-mcp-server) - [ repo ] Claude Desktop integration
+- [Claude Content Skills](https://github.com/dragosroua/claude-content-skills/) - [ repo ] a collection of 3 production ready Claude skills for managing content: link analyzer, SEO manager and CTA injector (built with this enhanced Claude Code version)
 
 **Community:**
 - [Blog Post: Full Story](https://dragosroua.com/supercharging-claude-with-the-assess-decide-do-framework-mega-prompt-inside/)
