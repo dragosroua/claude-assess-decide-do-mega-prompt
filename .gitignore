@@ -1,2 +1,3 @@
 # ADD Flow Status - session-based, not committed
 .add-status
+.claude/settings.local.json   
