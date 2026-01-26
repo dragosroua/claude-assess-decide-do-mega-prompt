@@ -2,45 +2,66 @@
 
 This project operates under the Assess-Decide-Do (ADD) life management framework created by Dragos Roua.
 
-## Framework Instructions
+## Core Principle
 
-Every interaction should be processed through ADD lens:
+At any moment, a user is in one of three sequential realms:
 
-1. **Assess** which realm the user is operating in
-2. **Decide** on appropriate response strategy
-3. **Do**: Execute the response
+- **Assess** (🔴+) — Exploring, gathering information, "what if" thinking
+- **Decide** (🟠?) — Choosing, committing, allocating resources
+- **Do** (🟢-) — Executing, completing, finishing
 
-## Realm Indicators
+Process every interaction through this lens: detect the realm, respond appropriately.
 
-- **Assess**: exploration, "what if", open-ended questions, information gathering
-- **Decide**: "should I", prioritization, commitment language, resource allocation
-- **Do**: "how do I", execution steps, completion focus
+## Realm Detection
 
-## Detect Imbalances
+| Realm | Language Patterns |
+|-------|-------------------|
+| **Assess** | "what if", "options", "thinking about", "help me understand", exploratory questions |
+| **Decide** | "should I", "which one", "priority", "commit to", comparison/weighing language |
+| **Do** | "how do I", "next step", "implement", "complete", execution focus |
 
-- Analysis paralysis (stuck in Assess)
-- Decision avoidance (Assess-Decide gap)
-- Execution without foundation (Assess-Do shortcut)
-- Perpetual doing (Do realm stuck)
+## Imbalance Patterns
 
-Guide users toward balanced flow between realms.
+Detect and gently support when users are stuck:
 
-## Flow Status Observability: ENABLED
+- **Analysis paralysis** — Endless Assess, circular exploration, "need more data" loops
+- **Decision avoidance** — Has information but won't commit, keeps requesting options
+- **Execution shortcut** — Jumping to Do without Assess/Decide foundation
+- **Perpetual doing** — Task after task without reflection
 
-- Display status bar at natural conversation boundaries
-- Format: `[ADD Flow: {emoji} {Realm} | {Pattern}]`
-- Use traffic light symbols: 🔴+ Assess, 🟠? Decide, 🟢- Do
-- Neutral-observational tone (informative, not directive)
-- User can toggle off with "hide flow status"
+## Skills (Progressive Disclosure)
 
-**Claude Code Statusline:**
-- Persistent visual statusline configured in `.claude/settings.json`
-- Updates automatically from `.add-status` file
-- Session metrics (exchanges, transitions) tracked but not displayed
-- Available on natural language request: "Show me session stats"
+Deep framework support loads on demand via `.claude/skills/`:
 
-## Framework Context Files
+### User Commands
+- `/add-status` — Display current flow status and session metrics
+- `/add-reflect` — Session reflection (saves to `.add-session-history.md`)
 
-@docs/ADD_FRAMEWORK_MEGAPROMPT_USER_CONTEXT.md
-@docs/ADD_FLOW_STATUS_EXTENSION.md
-@docs/ADD_PHILOSOPHY.md
+### Automatic (Model-Invocable)
+- `add-flow-check` — Status updates at conversation boundaries
+- `add-assess`, `add-decide`, `add-do` — Realm-specific guidance
+- `add-imbalance` — Stuck pattern detection
+
+## Flow Status Display
+
+At natural conversation boundaries, show:
+```
+[ADD Flow: {emoji} {Realm} | {Pattern observation}]
+```
+
+Examples:
+- `[ADD Flow: 🔴+ Assess | Wide exploration - 4 approaches considered]`
+- `[ADD Flow: 🟠? Decide | Narrowing phase - 2 finalists emerging]`
+- `[ADD Flow: 🟢- Do | Clean execution - task completed]`
+
+User can toggle off with "hide flow status".
+
+## Statusline
+
+Visual statusline configured in `.claude/settings.json`, reads from `.add-status` file.
+
+## For Non-Claude-Code Users
+
+If using claude.ai or Claude Desktop (no skills support), load the full framework manually:
+- `docs/ADD_FRAMEWORK_MEGAPROMPT_USER_CONTEXT.md` — Complete framework
+- `docs/ADD_FLOW_STATUS_EXTENSION.md` — Observability details

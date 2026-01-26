@@ -209,6 +209,55 @@ For Claude Code users: Visual statusline configured separately.
 
 **Note:** This level is Claude Code-specific. For claude.ai or Claude Desktop, use Levels 1-4.
 
+### Level 6: Skills Integration (Claude Code - Advanced)
+
+**What's loaded:**
+- Core framework awareness (Level 1)
+- Flow Status Extension (Level 2)
+- Persistent statusline display (Level 5)
+- **ADD Skills** (.claude/skills/)
+
+**Skills included:**
+
+| Skill | Type | Purpose |
+|-------|------|---------|
+| `add-flow-check.md` | Model-invocable | Automatic status updates at conversation boundaries |
+| `add-status.md` | User-invocable | `/add-status` command for explicit flow check |
+| `add-reflect.md` | Both + Subagent | Session reflection with forked context |
+| `add-assess.md` | Model-invocable | Deep Assess realm support |
+| `add-decide.md` | Model-invocable | Deep Decide realm support |
+| `add-do.md` | Model-invocable | Deep Do realm support |
+| `add-imbalance.md` | Model-invocable | Imbalance detection and support |
+
+**Experience:**
+- Everything from Levels 1-5
+- **Progressive disclosure** - Load only relevant context when needed
+- **Automatic maintenance** - Model-invocable skills keep status updated
+- **User commands** - `/add-status`, `/add-reflect` for explicit control
+- **Subagent isolation** - Reflection work happens in forked context
+
+**Use case:** Claude Code power users wanting full ADD integration with minimal context overhead
+
+**Benefits:**
+- Smaller context footprint (skills load on demand)
+- Automatic flow maintenance (model invokes status checks)
+- Clean separation (reflection in forked context)
+- Explicit commands alongside automatic behavior
+
+**Configuration:**
+
+Skills are automatically active when present in `.claude/skills/`. No additional configuration needed beyond Level 5 setup.
+
+**User Commands:**
+```
+/add-status    # Show current flow status and metrics
+/add-reflect   # Trigger session reflection (saves to .add-session-history.md)
+```
+
+**Setup:** See [ADD Skills Documentation](ADD_SKILLS.md) for complete details.
+
+**Note:** This level requires Claude Code with skills support. The skills merge announcement (January 2026) unified slash commands and skills, enabling this level of integration.
+
 ## Component Relationships
 
 ### Independence
@@ -337,9 +386,21 @@ Operate with full ADD awareness and observability.
 
 ```
 claude-assess-decide-do-mega-prompt/
+├── .claude/
+│   ├── settings.json                            # Statusline configuration (Level 5)
+│   ├── statusline.sh                            # Display script (Level 5)
+│   └── skills/                                  # ADD Skills (Level 6)
+│       ├── add-flow-check.md                    # Model-invocable: auto status
+│       ├── add-status.md                        # User-invocable: /add-status
+│       ├── add-reflect.md                       # Subagent: session reflection
+│       ├── add-assess.md                        # Assess realm support
+│       ├── add-decide.md                        # Decide realm support
+│       ├── add-do.md                            # Do realm support
+│       └── add-imbalance.md                     # Imbalance detection
 ├── docs/
 │   ├── ADD_FRAMEWORK_MEGAPROMPT.md              # CORE (Required)
 │   ├── ADD_FLOW_STATUS_EXTENSION.md             # EXTENSION (Optional)
+│   ├── ADD_SKILLS.md                            # Skills documentation
 │   ├── ADD_FRAMEWORK_MEGAPROMPT_USER_CONTEXT.md # VARIANT (Optional)
 │   ├── ADD_MODULAR_ARCHITECTURE.md              # This file
 │   ├── ADD_TECHNICAL_INTEGRATION.md
@@ -559,13 +620,15 @@ Instead:
 
 ## Summary: Choose Your Experience
 
-| Configuration | Files Loaded | Status Bar | Use Case |
-|--------------|--------------|------------|----------|
-| **No ADD** | None | No | Standard Claude |
-| **Core ADD** | MEGAPROMPT | No | Implicit ADD support |
-| **ADD + Status ON** | MEGAPROMPT + EXTENSION | Yes (default) | Full observability |
-| **ADD + Status OFF** | MEGAPROMPT + EXTENSION | No (available) | On-demand metrics |
-| **Contextual** | MEGAPROMPT + EXTENSION | Conditional | Complex work only |
+| Level | Configuration | Files Loaded | Status Bar | Use Case |
+|-------|--------------|--------------|------------|----------|
+| 0 | **No ADD** | None | No | Standard Claude |
+| 1 | **Core ADD** | MEGAPROMPT | No | Implicit ADD support |
+| 2 | **ADD + Status ON** | MEGAPROMPT + EXTENSION | Yes (default) | Full observability |
+| 3 | **ADD + Status OFF** | MEGAPROMPT + EXTENSION | No (available) | On-demand metrics |
+| 4 | **Contextual** | MEGAPROMPT + EXTENSION | Conditional | Complex work only |
+| 5 | **Statusline** | + statusline.sh | Visual bar | Claude Code users |
+| 6 | **Skills** | + .claude/skills/ | Auto + Commands | Power users |
 
 **The power is in the choice.**
 
@@ -578,5 +641,7 @@ Load what you need. Toggle what you want. The framework adapts to you.
 See:
 - [`ADD_FRAMEWORK_MEGAPROMPT.md`](ADD_FRAMEWORK_MEGAPROMPT.md) - Core framework
 - [`ADD_FLOW_STATUS_EXTENSION.md`](ADD_FLOW_STATUS_EXTENSION.md) - Observability extension
+- [`ADD_SKILLS.md`](ADD_SKILLS.md) - Skills documentation (Level 6)
+- [`CLAUDE_CODE_STATUSLINE.md`](CLAUDE_CODE_STATUSLINE.md) - Statusline setup (Level 5)
 - [`examples/`](../examples/) - Configuration examples
 - [`integration/setup-guide.md`](../integration/setup-guide.md) - Step-by-step setup

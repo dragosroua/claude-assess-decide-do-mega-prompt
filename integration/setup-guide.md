@@ -12,9 +12,54 @@ Complete step-by-step instructions for integrating the Assess-Decide-Do framewor
 
 Choose the integration level that matches your needs:
 
+### Option 0: Skills-First for Claude Code (10 minutes) *(Recommended)*
+
+**Best for**: Claude Code users wanting efficient, modern integration
+
+**What you get**:
+- ~1.5KB base context (vs 26KB with megaprompt)
+- Skills load on demand when needed
+- `/add-status` and `/add-reflect` commands
+- Automatic flow tracking
+
+**Steps**:
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/dragosroua/claude-assess-decide-do-mega-prompt.git
+   cd claude-assess-decide-do-mega-prompt
+   ```
+
+2. **Open in Claude Code**
+   The integration activates automatically:
+   - `CLAUDE.md` provides core ADD awareness
+   - `.claude/skills/` contains all ADD skills
+   - `.claude/settings.json` configures the statusline
+
+3. **Test the Skills**
+   ```
+   /add-status    # Shows current realm and metrics
+   /add-reflect   # Captures session patterns to history
+   ```
+
+4. **Watch the Statusline**
+   The bottom of Claude Code shows real-time realm:
+   ```
+   [ADD Flow: 🔴+ Assess | Exploring options]
+   ```
+
+5. **Verify Success**
+   - Responses align with your realm
+   - Status updates at conversation boundaries
+   - `/add-status` shows meaningful metrics
+
+**For your own projects**: Copy `.claude/` directory and `CLAUDE.md` to your project root.
+
+---
+
 ### Option 1: Quick Start - Custom Instructions (5 minutes)
 
-**Best for**: Users who want ADD awareness in all Claude conversations
+**Best for**: claude.ai users who want ADD awareness in all conversations (no skills support)
 
 **Steps**:
 
@@ -90,9 +135,11 @@ Choose the integration level that matches your needs:
    - Place the repository in an accessible location
    - Reference the file path in your initial message
 
-### Option 3: Project-Level Integration (10 minutes)
+### Option 3: Project-Level Integration - Megaprompt (10 minutes)
 
-**Best for**: Developers using Claude Code or working on specific projects
+**Best for**: Claude Desktop users or projects where skills aren't supported
+
+**Note**: For Claude Code, use Option 0 (Skills-First) instead—it's more efficient.
 
 **Steps**:
 
@@ -336,10 +383,11 @@ After successful integration:
 
 For advanced users wanting deeper integration:
 
+- **Skills Documentation**: See `docs/ADD_SKILLS.md` for full skills reference
+- **Custom Skills**: Build ADD-aware skills for specific domains (copy existing skills as templates)
 - **MCP Server Integration**: See `docs/ADD_TECHNICAL_INTEGRATION.md`
-- **Custom Skills**: Build ADD-aware skills for specific domains
-- **Memory Systems**: Persistent realm tracking across conversations
-- **Tool Restrictions**: Enforce realm boundaries programmatically
+- **Session History**: `/add-reflect` saves to `.add-session-history.md` for long-term pattern tracking
+- **Statusline Customization**: Edit `.claude/statusline.sh` to change display format
 
 ---
 

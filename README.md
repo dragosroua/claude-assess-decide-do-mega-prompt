@@ -89,61 +89,71 @@ Framework: Operate with Assess-Decide-Do (ADD) life management framework.
 3. Say: "Load and operate with ADD framework awareness"
 4. Attach the file
 
-### Option 3: Project-Level (10 minutes)
+### Option 3: Project-Level with Skills (10 minutes) *(Recommended for Claude Code)*
 
-**For development projects:**
+**For development projects using Claude Code:**
 
-Create `.claude` file in your project root:
+1. Clone or fork the repository
+2. The skills-first architecture activates automatically:
+   - `CLAUDE.md` loads minimal core awareness (~1.5KB)
+   - Skills in `.claude/skills/` provide deep support on demand
+3. Try `/add-status` and `/add-reflect` commands
 
-```yaml
-instructions: |
-  Operate with Assess-Decide-Do (ADD) framework.
-  Detect realms, identify imbalances, guide balanced flow.
-
-context_files:
-  - docs/ADD_FRAMEWORK_MEGAPROMPT.md
-```
-
-**[Complete Setup Guide →](integration/setup-guide.md)**
+**[Complete Setup Guide →](integration/setup-guide.md)** | **[Skills Documentation →](docs/ADD_SKILLS.md)**
 
 ---
 
 ## Claude Code Users: Enhanced Integration
 
-If you're using **Claude Code**, enable persistent visual statusline for real-time flow tracking:
+If you're using **Claude Code**, you get native skills integration plus persistent visual statusline:
 
-**What you get:**
+**Skills Commands:**
+- `/add-status` - Display current flow status and session metrics
+- `/add-reflect` - Trigger session reflection (saves history for pattern awareness)
+
+**Automatic Features:**
+- Model-invocable skills maintain flow status automatically
+- Progressive context disclosure (load only what's needed)
+- Subagent integration for isolated reflection work
+
+**Visual Statusline:**
 - 🔴 🟠 🟢 Visual realm indicator at bottom of interface
 - Live flow status updates as conversation progresses
-- Session metrics tracked and available on natural language request
+- Session metrics tracked and available on request
 
 **Example statusline:**
 ```
 [ADD Flow: 🔴+ Assess | Exploring implementation options]
 ```
 
-**[Setup Claude Code Statusline →](docs/CLAUDE_CODE_STATUSLINE.md)** (10 minutes)
+**[Skills Documentation →](docs/ADD_SKILLS.md)** | **[Setup Claude Code Statusline →](docs/CLAUDE_CODE_STATUSLINE.md)**
 
 ---
 
 ## How It Works
 
-### Three Levels of Integration
+### Five Levels of Integration
 
-**Level 1: Claude Operating with ADD Awareness**  
+**Level 1: Claude Operating with ADD Awareness**
 Claude automatically detects your realm and structures responses appropriately. You benefit without thinking about ADD.
 
-**Level 2: User Guided Toward ADD**  
+**Level 2: User Guided Toward ADD**
 Claude helps you recognize patterns, detect when you're stuck, and transition smoothly between phases.
 
-**Level 3: Tool & Environment Integration**  
+**Level 3: Tool & Environment Integration**
 The framework shapes file creation, code development, research processes, and project management workflows.
 
-**Level 4: Flow Status Observability** *(Optional)*  
+**Level 4: Flow Status Observability** *(Optional)*
 Visual tracking of realm patterns with toggleable status bar:
 ```
 [ADD Flow: 🔴+ Assess | Deep exploration - 8 data points gathered]
 ```
+
+**Level 5: Skills Integration** *(Claude Code)*
+Native skills with progressive disclosure, automatic status updates, and subagent-powered reflection:
+- `/add-status` - Explicit flow check
+- `/add-reflect` - Session reflection with forked context
+- Model-invocable skills for automatic realm support
 
 ### The Architecture
 
@@ -277,9 +287,22 @@ The core principles are model-agnostic. See [Multi-Model Guide](docs/MULTI_MODEL
 ```
 CLAUDE.md                                # Auto-loaded memory for Claude Code ⭐
 
+.claude/
+├── settings.json                       # Statusline configuration
+├── statusline.sh                       # Visual display script
+└── skills/                             # ADD Skills (new!)
+    ├── add-flow-check.md               # Model-invocable: auto status updates ⭐
+    ├── add-status.md                   # User-invocable: /add-status command ⭐
+    ├── add-reflect.md                  # Subagent: session reflection ⭐
+    ├── add-assess.md                   # Assess realm support
+    ├── add-decide.md                   # Decide realm support
+    ├── add-do.md                       # Do realm support
+    └── add-imbalance.md                # Imbalance detection
+
 docs/
 ├── ADD_FRAMEWORK_MEGAPROMPT.md         # Core integration prompt ⭐
 ├── ADD_FLOW_STATUS_EXTENSION.md        # Optional observability
+├── ADD_SKILLS.md                       # Skills documentation (new!) ⭐
 ├── CLAUDE_CODE_STATUSLINE.md           # Claude Code statusline setup
 ├── MULTI_MODEL_GUIDE.md                # Multi-model compatibility guide
 ├── ADD_MODULAR_ARCHITECTURE.md         # Configuration guide
