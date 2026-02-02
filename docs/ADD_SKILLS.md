@@ -25,14 +25,16 @@ The ADD skills system provides:
 
 ```
 .claude/skills/
-├── add-flow-check.md    # Model-invocable: automatic status updates
-├── add-status.md        # User-invocable: /add-status command
-├── add-reflect.md       # Both: session reflection with forked context
-├── add-assess.md        # Model-invocable: Assess realm support
-├── add-decide.md        # Model-invocable: Decide realm support
-├── add-do.md            # Model-invocable: Do realm support
-└── add-imbalance.md     # Model-invocable: imbalance detection
+├── add-flow-check/SKILL.md    # Model-invocable: automatic status updates
+├── add-status/SKILL.md        # User-invocable: /add-status command
+├── add-reflect/SKILL.md       # Both: session reflection with forked context
+├── add-assess/SKILL.md        # Model-invocable: Assess realm support
+├── add-decide/SKILL.md        # Model-invocable: Decide realm support
+├── add-do/SKILL.md            # Model-invocable: Do realm support
+└── add-imbalance/SKILL.md     # Model-invocable: imbalance detection
 ```
+
+**Note:** Skills use the nested format (`skill-name/SKILL.md`) for consistency with Claude Code conventions. These skills are maintained in a separate repository and integrated here.
 
 ## User-Invocable Skills
 

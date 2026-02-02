@@ -390,13 +390,13 @@ claude-assess-decide-do-mega-prompt/
 │   ├── settings.json                            # Statusline configuration (Level 5)
 │   ├── statusline.sh                            # Display script (Level 5)
 │   └── skills/                                  # ADD Skills (Level 6)
-│       ├── add-flow-check.md                    # Model-invocable: auto status
-│       ├── add-status.md                        # User-invocable: /add-status
-│       ├── add-reflect.md                       # Subagent: session reflection
-│       ├── add-assess.md                        # Assess realm support
-│       ├── add-decide.md                        # Decide realm support
-│       ├── add-do.md                            # Do realm support
-│       └── add-imbalance.md                     # Imbalance detection
+│       ├── add-flow-check/SKILL.md              # Model-invocable: auto status
+│       ├── add-status/SKILL.md                  # User-invocable: /add-status
+│       ├── add-reflect/SKILL.md                 # Subagent: session reflection
+│       ├── add-assess/SKILL.md                  # Assess realm support
+│       ├── add-decide/SKILL.md                  # Decide realm support
+│       ├── add-do/SKILL.md                      # Do realm support
+│       └── add-imbalance/SKILL.md               # Imbalance detection
 ├── docs/
 │   ├── ADD_FRAMEWORK_MEGAPROMPT.md              # CORE (Required)
 │   ├── ADD_FLOW_STATUS_EXTENSION.md             # EXTENSION (Optional)

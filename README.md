@@ -290,14 +290,14 @@ CLAUDE.md                                # Auto-loaded memory for Claude Code �
 .claude/
 ├── settings.json                       # Statusline configuration
 ├── statusline.sh                       # Visual display script
-└── skills/                             # ADD Skills (new!)
-    ├── add-flow-check.md               # Model-invocable: auto status updates ⭐
-    ├── add-status.md                   # User-invocable: /add-status command ⭐
-    ├── add-reflect.md                  # Subagent: session reflection ⭐
-    ├── add-assess.md                   # Assess realm support
-    ├── add-decide.md                   # Decide realm support
-    ├── add-do.md                       # Do realm support
-    └── add-imbalance.md                # Imbalance detection
+└── skills/                             # ADD Skills
+    ├── add-flow-check/SKILL.md         # Model-invocable: auto status updates ⭐
+    ├── add-status/SKILL.md             # User-invocable: /add-status command ⭐
+    ├── add-reflect/SKILL.md            # Subagent: session reflection ⭐
+    ├── add-assess/SKILL.md             # Assess realm support
+    ├── add-decide/SKILL.md             # Decide realm support
+    ├── add-do/SKILL.md                 # Do realm support
+    └── add-imbalance/SKILL.md          # Imbalance detection
 
 docs/
 ├── ADD_FRAMEWORK_MEGAPROMPT.md         # Core integration prompt ⭐
