@@ -10,6 +10,18 @@ This is the first integration of a human cognitive framework into a Large Langua
 
 The result: Cognitive alignment that users describe as "weirdly empathic."
 
+> ### 🚀 This Project Has Evolved
+>
+> What started as a megaprompt is now a modular ecosystem:
+>
+> | Repository | Purpose |
+> |------------|---------|
+> | **This Repo** | Core framework, documentation, philosophy |
+> | **[ADD Skills](https://github.com/dragosroua/add-framework-skills)** | Modular Claude Code skills (94% less context overhead) |
+> | **[ADD Cowork Plugin](https://github.com/dragosroua/add-framework-cowork-plugin)** | Full ADD integration for Claude Cowork — no coding required |
+>
+> **New to ADD?** Start here. **Using Claude Code?** Grab the skills. **Not a coder?** Try the Cowork plugin.
+
 ---
 
 ## The Problem
